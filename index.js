@@ -12,7 +12,7 @@ function validateForm() {
     var y = document.forms["myForm"]["lname"].value;
    
    if (x == "" & y!="") {
-       alert("You should enten your name");
+       alert("You should enter your name");
    }
       else if (x!="" & y=="") {
           alert("You should enter your surname");
@@ -26,6 +26,45 @@ function validateForm() {
           return false;
       }
   }
+
+
+  function validateForm2() {
+    var x = document.forms["myForm"]["fname"].value;
+    var y = document.forms["myForm"]["lname"].value;
+   
+   if (x == "" & y!="") {
+       document.getElementById("name2").innerHTML="Please enter your name";
+       document.getElementById("name2").style.display = content;
+   }
+      else if (x!="" & y=="") {
+          alert("You should enter your surname");
+      }
+
+      else if(x=="" & y==""){
+         alert("Enter both name and surname");
+      }
+      
+      else{
+          return false;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   function printo(){
       var x = document.forms["myForm"]["fname"].value  + ""; 
