@@ -31,7 +31,7 @@ while(numri2>0){
     numri2--;
 }
 
-console.log("------Faktorieli------");
+console.log("------Faktorieli-----------");
 var Faktorieli = 6 ;
 console.log("Faktorieli i numri " + Faktorieli + " eshte " + pergjigja);
 
