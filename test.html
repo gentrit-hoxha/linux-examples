@@ -5,8 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Document</title>
+    
+    <style>
+
+      .item1{
+          font-size: 15px !important;
+      }
+
+
+        .container1 div, .item1,.item2,.item3,.item4{
+            background-color: yellow;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            padding: 10px;
+            
+            border: 2px solid blue;
+            
+        }
+
+        .container1{
+            margin: 5px;
+            display: grid;
+            grid-template-columns: 20% 60% auto;
+            grid-gap: 10px;       
+        }
+
+        .container2{
+            margin: 5px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;       
+        }
+
+
+        .footer{
+            margin: 5px;
+        }
+
+
+        @media screen and (max-width: 700px) {
+            .container1{
+                grid-template-columns: auto;
+            }
+
+            .container2{
+                grid-template-columns: auto;
+            }
+        }
+      
+        
+    </style>
+
+
 </head>
 <body>
+
+
+
+     <div class="container1">
+         <div class="item1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod eveniet dolores consequatur temporibus aut enim, in architecto. Voluptatum iusto, sequi quasi voluptates provident, commodi facere exercitationem quidem rerum dolores ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi ipsa porro distinctio quaerat ab inventore exercitationem, eos illum rerum. Perspiciatis odio repellat, ullam unde exercitationem quas eos nulla quod.</div>
+         <div class="item2">2</div>
+         <div class="item3">3</div>   
+     </div>
+
+
+     <div class="container2">
+        <div class="item1">1</div>   
+        <div class="item2">2</div>
+        <div class="item3">3</div>   
+        <div class="item4">3</div>   
+    </div>
+
+
+
+     <div class="footer">
+        <div class="item4">4</div>  
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  <div class="container mt-4">
@@ -16,7 +126,7 @@
             <div class="col-sm">
                  <div class="form-group">
                      <label for="">Emri</label>
-                     <input name="vlera" type="search" class="form-control"> 
+                     <input name="q" type="search" class="form-control"> 
                  </div>
 
                  <div class="form group">
@@ -28,6 +138,10 @@
         
      </form>
  </div>
+
+
+
+ 
 
 
 
