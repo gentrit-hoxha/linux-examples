@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Document</title>
-    
+
+
     <style>
 
       .item1{
@@ -52,7 +53,46 @@
             .container2{
                 grid-template-columns: auto;
             }
+
+            ul{
+                flex-direction: column !important;
+                align-items: center;
+                margin-left: 0px;
+                padding-left: 0px;
+            }
+
+         
         }
+
+        ul li{
+            list-style-type: none;
+        }
+
+    
+        ul  {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+     
+
+        .img{
+            filter: grayscale(100%);
+            width: 250px !important;
+            height: fit-content !important;
+            padding: 5px 0px 5px 0px;
+        }
+
+       .img:hover { 
+             filter: grayscale(0%);
+             cursor: pointer;
+             transition: 0.3s;
+        } 
+
+
+        
 
 
 
@@ -143,6 +183,34 @@
         
      </form>
  </div>
+
+
+
+
+  <div class="companies">
+    <ul>
+        
+        <li>
+            <a href="https://www.google.com">
+               <img src="google.png" class="img">
+            </a>
+        </li>
+     
+        <li>
+            <img src="facebook.png" alt="" class="img">
+        </li>
+     
+        <li>
+            <img src="netflix.png" alt="" class="img">
+        </li>
+     
+        <li>
+            <img src="microsoft.png" alt="" class="img">
+        </li>
+     </ul>
+  </div>
+
+
 
 
 
